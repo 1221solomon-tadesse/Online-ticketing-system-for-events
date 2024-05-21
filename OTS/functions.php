@@ -265,9 +265,6 @@ function template_header($title) {
                     </nav>
                 EOT;
                 }
-        
-    
-
 // Template footer
 function template_footer() {
     echo <<<EOT
