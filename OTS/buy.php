@@ -1,7 +1,6 @@
 <?php
  include 'session.php';
 include 'functions.php';
-
 $av;
 if(isset($_GET['btn'])){
 $v=$_GET['btn'];
@@ -29,8 +28,6 @@ foreach ($ti as $f): endforeach;
 else{ 
 header("Location: user.php");}
 ?>
-
-
 <?=template_header_pro('Dashboard',htmlspecialchars($u['NAME'], ENT_QUOTES)." ")?>
 <div class="content home">
  <div class="probox" >
@@ -53,8 +50,6 @@ else{
   $b+=1;
 }
 endforeach;?>
-
-
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
@@ -167,11 +162,6 @@ function add($v1,$id2){
   array_push($arr,htmlspecialchars($f['STATUS'], ENT_QUOTES));}
 endforeach;
 ;?>
-
-
-
- 
-
   </div>
   <script>
 // Get the modal
@@ -213,19 +203,7 @@ window.onclick = function(event) {
   }
 }
 </script>
-
-
-    
-   
-   
-    
-    
     </div></div></div>
-	
-	
-
-
-
 <footer class="main-footer text-sm">
         <strong>Copyright © <?php echo date('Y') ?>. 
         <!-- <a href=""></a> -->
