@@ -4,9 +4,7 @@ include 'session.php';
 // Connect to MySQL using the below function
 $pdo = pdo_connect_mysql();
 // MySQL query that retrieves all the tickets from the database
-
 $variable=$_GET['btn'];
-
 $stmt = $pdo->prepare("SELECT * FROM `event` WHERE `EID`= :bud");
 $stmt->bindParam(':bud', $variable );
 $stmt->execute();
@@ -15,7 +13,6 @@ foreach ($user as $org):
 endforeach; ?>
 <?=template_header_orgr('Add',htmlspecialchars($org['NAME'], ENT_QUOTES))?>
 <div class="content home">
-
  <div class="probox" >
 <div class="topbox">
   <div class="wo" >  
@@ -65,8 +62,5 @@ endforeach; ?>
      
       mysqli_query($conn,$sql3);
       }
-      
     }
-    
-    
     ?>
